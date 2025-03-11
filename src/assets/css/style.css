@@ -401,7 +401,7 @@ section {
 }
 
 .services-info p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.7;
 }
@@ -607,6 +607,16 @@ section {
     }
 }
 
+@media (max-width: 960px) {
+    .projects-box {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .home-content h1 {
+      font-size: 6rem;
+    }
+  }
+
 @media (max-width: 768px) {
     .projects-box {
         grid-template-columns: 1fr;
@@ -616,5 +626,45 @@ section {
     .project-card {
         max-width: 100%;
     }
+
+    .services-container {
+        max-width: 90%;
+        padding: 1rem;
 }
 
+@media (max-width: 576px) {
+    section {
+      padding: 6rem 5%;
+    }
+  
+    .home {
+      gap: 2rem; 
+    }
+  
+    .home-img img {
+      width: 65vw; 
+    }
+  
+    .home-content h1 {
+      font-size: 6rem;
+    }
+  
+    .home-content h3 {
+      font-size: 2.4rem;
+    }
+  
+    .home-content p {
+      font-size: 1.4rem;
+      line-height: 1.6;
+    }
+  
+    .text-animation {
+      font-size: 1.8rem;
+    }
+  
+    .btn,
+    .gradient-btn {
+      font-size: 1.6rem;
+      padding: 1rem 1.6rem;
+    }
+  }
